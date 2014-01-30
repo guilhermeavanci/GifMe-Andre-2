@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PopViewController.h"
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 
-@interface ViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIButton *btStart;
+@property (strong, nonatomic) UIStoryboardPopoverSegue *currentPopoverSegue;
+@property (strong, nonatomic) PopViewController *pvc;
 @end

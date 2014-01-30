@@ -21,6 +21,10 @@
 		0EE878061897FDDC00E8EE18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE877E81897FDDC00E8EE18 /* UIKit.framework */; };
 		0EE8780E1897FDDC00E8EE18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EE8780C1897FDDC00E8EE18 /* InfoPlist.strings */; };
 		0EE878101897FDDC00E8EE18 /* GifMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8780F1897FDDC00E8EE18 /* GifMeTests.m */; };
+		0EE8781B1898163700E8EE18 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE8781A1898163700E8EE18 /* frame.png */; };
+		0EE8782018981BFD00E8EE18 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE8781F18981BFD00E8EE18 /* AssetsLibrary.framework */; };
+		0EE8782218981C0600E8EE18 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE8782118981C0600E8EE18 /* CoreImage.framework */; };
+		0EE8782D18996D7500E8EE18 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8782C18996D7500E8EE18 /* PopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		0EE8780B1897FDDC00E8EE18 /* GifMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GifMeTests-Info.plist"; sourceTree = "<group>"; };
 		0EE8780D1897FDDC00E8EE18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0EE8780F1897FDDC00E8EE18 /* GifMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifMeTests.m; sourceTree = "<group>"; };
+		0EE8781A1898163700E8EE18 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
+		0EE8781F18981BFD00E8EE18 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0EE8782118981C0600E8EE18 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0EE8782B18996D7500E8EE18 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		0EE8782C18996D7500E8EE18 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE8782218981C0600E8EE18 /* CoreImage.framework in Frameworks */,
+				0EE8782018981BFD00E8EE18 /* AssetsLibrary.framework in Frameworks */,
 				0EE877E71897FDDC00E8EE18 /* CoreGraphics.framework in Frameworks */,
 				0EE877E91897FDDC00E8EE18 /* UIKit.framework in Frameworks */,
 				0EE877E51897FDDC00E8EE18 /* Foundation.framework in Frameworks */,
@@ -101,6 +112,8 @@
 		0EE877E31897FDDB00E8EE18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EE8782118981C0600E8EE18 /* CoreImage.framework */,
+				0EE8781F18981BFD00E8EE18 /* AssetsLibrary.framework */,
 				0EE877E41897FDDC00E8EE18 /* Foundation.framework */,
 				0EE877E61897FDDC00E8EE18 /* CoreGraphics.framework */,
 				0EE877E81897FDDC00E8EE18 /* UIKit.framework */,
@@ -112,6 +125,7 @@
 		0EE877EA1897FDDC00E8EE18 /* GifMe */ = {
 			isa = PBXGroup;
 			children = (
+				0EE878191898161700E8EE18 /* Images */,
 				0EE877F31897FDDC00E8EE18 /* AppDelegate.h */,
 				0EE877F41897FDDC00E8EE18 /* AppDelegate.m */,
 				0EE877F61897FDDC00E8EE18 /* Main.storyboard */,
@@ -119,6 +133,8 @@
 				0EE877FA1897FDDC00E8EE18 /* ViewController.m */,
 				0EE877FC1897FDDC00E8EE18 /* Images.xcassets */,
 				0EE877EB1897FDDC00E8EE18 /* Supporting Files */,
+				0EE8782B18996D7500E8EE18 /* PopViewController.h */,
+				0EE8782C18996D7500E8EE18 /* PopViewController.m */,
 			);
 			path = GifMe;
 			sourceTree = "<group>";
@@ -150,6 +166,14 @@
 				0EE8780C1897FDDC00E8EE18 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EE878191898161700E8EE18 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8781A1898163700E8EE18 /* frame.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +255,7 @@
 				0EE877FD1897FDDC00E8EE18 /* Images.xcassets in Resources */,
 				0EE877EF1897FDDC00E8EE18 /* InfoPlist.strings in Resources */,
 				0EE877F81897FDDC00E8EE18 /* Main.storyboard in Resources */,
+				0EE8781B1898163700E8EE18 /* frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE8782D18996D7500E8EE18 /* PopViewController.m in Sources */,
 				0EE877FB1897FDDC00E8EE18 /* ViewController.m in Sources */,
 				0EE877F51897FDDC00E8EE18 /* AppDelegate.m in Sources */,
 				0EE877F11897FDDC00E8EE18 /* main.m in Sources */,
@@ -462,6 +488,7 @@
 				0EE878151897FDDC00E8EE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EE878161897FDDC00E8EE18 /* Build configuration list for PBXNativeTarget "GifMeTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +497,7 @@
 				0EE878181897FDDC00E8EE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
